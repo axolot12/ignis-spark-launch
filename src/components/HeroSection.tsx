@@ -56,26 +56,31 @@ const HeroSection = () => {
           <img
             src={logo}
             alt="IgnisLauncher Logo"
-            className="w-24 h-24 mx-auto animate-float drop-shadow-[0_0_30px_hsl(265,80%,65%)]"
-            width={96}
-            height={96}
+            className="w-28 h-28 mx-auto animate-float drop-shadow-[0_0_30px_hsl(265,80%,65%)] rounded-2xl"
+            width={112}
+            height={112}
           />
         </div>
 
         {/* Title */}
-        <h1 className="font-heading text-5xl md:text-7xl font-bold text-gradient animate-slide-up-delay-1 mb-4 tracking-wider">
-          IGNISLAUNCHER
+        <h1 className="font-heading text-5xl md:text-7xl font-bold text-gradient animate-slide-up-delay-1 tracking-wider">
+          IGNIS
         </h1>
+        <h2 className="font-heading text-2xl md:text-4xl font-semibold text-muted-foreground animate-slide-up-delay-1 mb-4 tracking-[0.3em]">
+          LAUNCHER
+        </h2>
 
-        <p className="text-lg md:text-xl text-muted-foreground animate-slide-up-delay-2 mb-2 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-muted-foreground animate-slide-up-delay-2 mb-4 max-w-2xl mx-auto">
           A modern Minecraft launcher with multi-instance support, Modrinth mod installation, friends system, capes & more.
         </p>
 
-        {/* Download count */}
+        {/* Download count as button */}
         {downloads !== null && (
-          <p className="text-sm text-muted-foreground animate-slide-up-delay-2 mb-8">
-            🔥 <span className="text-primary font-semibold">{formatCount(downloads)}</span> downloads
-          </p>
+          <div className="animate-slide-up-delay-2 mb-8">
+            <button className="px-6 py-3 rounded-xl border-2 border-primary/50 bg-primary/10 font-heading text-base font-bold text-primary hover:bg-primary/20 transition-all duration-300 cursor-default tracking-wide">
+              🔥 {formatCount(downloads)} Downloads
+            </button>
+          </div>
         )}
 
         {/* Buttons */}
