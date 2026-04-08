@@ -50,23 +50,12 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
       </div>
 
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        {/* Logo */}
-        <div className="animate-slide-up mb-6">
-          <img
-            src={logo}
-            alt="IgnisLauncher Logo"
-            className="w-28 h-28 mx-auto animate-float drop-shadow-[0_0_30px_hsl(265,80%,65%)] rounded-2xl"
-            width={112}
-            height={112}
-          />
-        </div>
-
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-16">
         {/* Title */}
-        <h1 className="font-heading text-5xl md:text-7xl font-bold text-gradient animate-slide-up-delay-1 tracking-wider">
+        <h1 className="font-heading text-5xl md:text-7xl font-bold text-gradient animate-slide-up tracking-wider">
           IGNIS
         </h1>
-        <h2 className="font-heading text-2xl md:text-4xl font-semibold text-muted-foreground animate-slide-up-delay-1 mb-4 tracking-[0.3em]">
+        <h2 className="font-heading text-2xl md:text-4xl font-bold text-gradient animate-slide-up-delay-1 mb-4 tracking-[0.3em]">
           LAUNCHER
         </h2>
 
