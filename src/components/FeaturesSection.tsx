@@ -64,7 +64,7 @@ const FeatureCard = ({ feature, index }: { feature: typeof features[0]; index: n
 
 const FeaturesSection = () => {
   return (
-    <section className="relative py-24 px-4">
+    <section id="features" className="relative py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-gradient mb-4">
