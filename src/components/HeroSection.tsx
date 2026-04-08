@@ -52,23 +52,25 @@ const HeroSection = () => {
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto pt-16">
         {/* Title */}
-        <h1 className="font-heading text-5xl md:text-7xl font-bold text-gradient animate-slide-up tracking-wider">
+        <h1 className="font-heading text-6xl md:text-8xl font-bold text-gradient animate-slide-up tracking-wider">
           IGNIS
         </h1>
-        <h2 className="font-heading text-2xl md:text-4xl font-bold text-gradient animate-slide-up-delay-1 mb-4 tracking-[0.3em]">
+        <h2 className="font-heading text-3xl md:text-5xl font-bold text-gradient animate-slide-up-delay-1 mb-6 tracking-[0.3em]">
           LAUNCHER
         </h2>
 
-        <p className="text-lg md:text-xl text-muted-foreground animate-slide-up-delay-2 mb-4 max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-muted-foreground animate-slide-up-delay-2 mb-6 max-w-2xl mx-auto">
           A modern Minecraft launcher with multi-instance support, Modrinth mod installation, friends system, capes & more.
         </p>
 
-        {/* Download count as button */}
+        {/* Downloaders count badge */}
         {downloads !== null && (
-          <div className="animate-slide-up-delay-2 mb-8">
-            <button className="px-6 py-3 rounded-xl border-2 border-primary/50 bg-primary/10 font-heading text-base font-bold text-primary hover:bg-primary/20 transition-all duration-300 cursor-default tracking-wide">
-              🔥 {formatCount(downloads)} Downloads
-            </button>
+          <div className="animate-slide-up-delay-2 mb-10">
+            <div className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl border-2 border-primary/40 bg-primary/5 backdrop-blur-md animate-pulse-glow cursor-default">
+              <span className="text-2xl">🔥</span>
+              <span className="font-heading text-3xl font-black text-gradient">{formatCount(downloads)}</span>
+              <span className="font-heading text-lg font-bold text-primary/80 tracking-wider">Downloaders</span>
+            </div>
           </div>
         )}
 
