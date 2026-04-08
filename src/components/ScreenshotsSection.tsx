@@ -28,7 +28,7 @@ const ScreenshotsSection = () => {
   }, []);
 
   return (
-    <section ref={ref} className="relative py-24 px-4">
+    <section ref={ref} id="screenshots" className="relative py-24 px-4">
       <div className={`max-w-5xl mx-auto transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
         <div className="text-center mb-12">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-gradient mb-4">
