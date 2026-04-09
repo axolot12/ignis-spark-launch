@@ -14,7 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Orbitron", "sans-serif"],
+        heading: ["Permanent Marker", "Orbitron", "sans-serif"],
         body: ["Inter", "sans-serif"],
       },
       colors: {
