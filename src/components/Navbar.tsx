@@ -38,7 +38,7 @@ const Navbar = () => {
             height={36}
           />
           <span className="font-heading text-lg font-bold text-foreground tracking-wider group-hover:text-gradient transition-all duration-300">
-            IgnisLauncher
+            IGNIS <span className="ml-1">LAUNCHER</span>
           </span>
         </div>
 
